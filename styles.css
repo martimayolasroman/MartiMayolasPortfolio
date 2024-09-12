@@ -1,0 +1,422 @@
+/* styles.css */
+:root {
+    --color-background: #1E1E2F; /* Azul Marino Oscuro */
+    --color-text: #FFFFFF; /* Blanco */
+    --color-accent1: #E94560; /* Rojo Rosado Vibrante */
+    --color-accent2: #0F3460; /* Azul Profundo */
+    --color-neutral: #EDEDED; /* Gris Claro */
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-background);
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+#hero {
+    background: var(--color-accent2);
+    color: var(--color-text);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.cta-button {
+    background: var(--color-accent1);
+    color: var(--color-text);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: var(--color-accent2);
+}
+
+#about {
+    padding: 50px 20px;
+    background: var(--color-neutral); /* Color de fondo neutro */
+    color: var(--color-background); /* Color del texto */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image {
+    max-width: 40%; /* Ajusta este valor para cambiar el tamaño de la imagen */
+    height: auto;
+    border-radius: 10px; /* Esto le da un borde redondeado a la imagen */
+}
+
+.about-text {
+    max-width: 55%; /* Ajusta el tamaño del texto */
+    margin-left: 20px;
+}
+
+.about-text h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: var(--color-accent2); /* Color para el título */
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#projects {
+    padding: 50px 20px;
+    background: var(--color-background);
+    color: var(--color-text);
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    color: #FFFFFF; /* Blanco para mayor visibilidad */
+    margin-bottom: 30px;
+}
+
+.project-category {
+    margin-bottom: 50px;
+}
+
+.project-category h3 {
+    font-size: 2rem;
+    color:  #FFFFFF; /* Título de cada categoría */
+    margin-bottom: 20px;
+    text-align: left;
+    border-bottom: 2px solid var(--color-accent1); /* Línea debajo del título */
+    padding-bottom: 10px;
+}
+
+.project-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-item {
+    background-color: var(--color-neutral); /* Fondo de la tarjeta */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.project-content {
+    display: flex;
+    align-items: flex-start; /* Alinea el contenido en la parte superior */
+    gap: 20px; /* Espacio entre el video y la descripción */
+}
+
+
+.project-description {
+    width: 50%;
+}
+
+.project-description h4 {
+    color: var(--color-accent1);
+    margin-top: 0;
+}
+
+.project-description p {
+    color: var(--color-background);
+}
+
+.project-description ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.project-description ul li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+    
+}
+
+#video-section {
+    display: flex;
+    flex-direction: column; /* Asegura que los videos se apilen uno debajo del otro */
+    align-items: center; /* Centra los videos horizontalmente */
+    gap: 20px; /* Añade espacio entre los videos */
+    padding: 20px;
+}
+.video-container-custom {
+    display: flex;
+    flex-direction: column; /* Apila los videos verticalmente */
+    align-items: center; /* Centra los videos horizontalmente */
+    gap: 20px; /* Espacio entre los videos */
+}
+
+.video-container-custom video {
+    width: 100%;
+    max-width: 1000px; /* Limita el ancho máximo de los videos */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade sombra para los videos */
+}
+
+.project-description img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-description a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--color-accent1);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-description a:hover {
+    color: var(--color-accent2);
+}
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-container {
+    width: 100%;
+    max-width: 1000px; /* Ancho del contenedor igual para ambos videos */
+    height: 700px; /* Altura del contenedor igual para ambos videos */
+    background-color: #000; /* Fondo negro para las franjas laterales */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-video, .project-video-vertical {
+    max-height: 100%; /* El video ocupará la altura completa del contenedor */
+    width: auto; /* Mantiene la proporción del video */
+    max-width: 100%; /* Limita el ancho del video al contenedor */
+    object-fit: contain; /* Asegura que el video se ajuste bien dentro del contenedor */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para el video */
+}
+#contact {
+    padding: 50px 20px;
+    background: var(--color-background);
+    color: var(--color-text);
+    text-align: center;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form label {
+    margin: 10px 0 5px;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-accent1);
+    border-radius: 5px;
+    background-color: var(--color-neutral);
+    color: var(--color-background);
+}
+
+#contact-form button {
+    background: var(--color-accent1);
+    color: var(--color-text);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact-form button:hover {
+    background: var(--color-accent2);
+}
+
+footer {
+    background: var(--color-background);
+    color: var(--color-text);
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    color: #333; /* Cambia el color del texto de toda la tabla */
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #646464;
+}
+
+th {
+    background-color: #d4d4d4;
+}
+
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Oculto hasta que el usuario comience a hacer scroll */
+   /* background-color: #ff6600; */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+}
+
+#scrollTopBtn:hover {
+    background-color: #ff3300; /* Cambia el color al pasar el mouse por encima */
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image, .about-text {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .about-text {
+        margin-top: 20px;
+    }
+}
+
+#experience {
+    padding: 50px 20px;
+    background: var(--color-background); /* Fondo oscuro */
+    color: var(--color-text); /* Texto claro */
+    text-align: center;
+}
+
+#experience h2 {
+    font-size: 2rem;
+    color: var(--color-accent1); /* Título en Rojo Rosado Vibrante */
+    margin-bottom: 30px;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience-item, .game-item {
+    background-color: #2B2D42; /* Fondo de tarjeta más oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra más definida */
+    width: 48%; /* Ambas tarjetas ocupan el 48% del contenedor */
+}
+
+.experience-item h3, .game-text h3 {
+    color: var(--color-accent1); /* Título en Rojo Rosado Vibrante */
+    margin-top: 0;
+}
+
+.experience-item p, 
+.experience-item ul, 
+.game-text p {
+    color: #EDEDED; /* Texto en Gris Claro para mejor contraste */
+}
+
+.experience-item ul {
+    list-style: disc;
+    margin: 0; /* Elimina margen extra que podría desalinear los puntos */
+    padding-left: 20px; /* Asegura que los puntos de la lista estén alineados */
+}
+
+.experience-item ul li {
+    margin: 10px 0;
+    padding-left: 5px; /* Asegura un espacio adecuado entre el punto y el texto */
+    text-indent: -5px; /* Alinea correctamente el texto con el punto */
+}
+
+.game-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.game-text {
+    color: #EDEDED;
+}
