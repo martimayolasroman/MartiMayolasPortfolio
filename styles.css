@@ -461,4 +461,53 @@ th {
     .project-grid {
         display: block;
     }
+
+    /* Cambiar la disposición del contenido en la versión móvil */
+    .project-content {
+        display: block; /* Hace que los elementos se apilen */
+    }
+
+    .project-description {
+        width: 100%; /* Asegura que la descripción ocupe todo el ancho */
+        margin-bottom: 20px; /* Añade espacio debajo del texto antes del video */
+    }
+
+    .project-video, .project-video-vertical {
+        width: 100%; /* Asegura que el video ocupe todo el ancho */
+        height: auto; /* Mantiene la proporción del video */
+    }
+
+     /* Ajuste para la sección de experiencia */
+     .experience-container {
+        flex-direction: column; /* Las tarjetas se apilan verticalmente */
+        align-items: center; /* Centra las tarjetas en dispositivos móviles */
+    }
+
+    .experience-item, .game-item {
+        width: 100%; /* Las tarjetas ocupan el 100% del ancho del contenedor */
+        margin-bottom: 20px; /* Añade un espacio entre las tarjetas */
+    }
+
+    /* Ajustar el tamaño del texto para mejor legibilidad en pantallas pequeñas */
+    .experience-item h3, .game-text h3 {
+        font-size: 1.5rem; /* Reduce el tamaño de los títulos */
+    }
+
+    .experience-item p, 
+    .experience-item ul, 
+    .game-text p {
+        font-size: 1rem; /* Reduce ligeramente el tamaño del texto */
+    }
+
+    .game-image {
+        width: 100%; /* Asegura que las imágenes sean 100% del ancho disponible */
+        height: auto; /* Mantiene la proporción de las imágenes */
+    }
+
+    .experience-item, .game-item {
+        padding: 15px; /* Ajusta el padding interno de las tarjetas */
+    }
+
+
+
 }
