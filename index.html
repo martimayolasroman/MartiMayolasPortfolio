@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Marti Mayolas</title>
     <link rel="stylesheet" href="styles.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-csharp.min.js"></script>
 </head>
 <body>
     <button id="scrollTopBtn" onclick="scrollToTop()">⬆️</button>
@@ -76,6 +80,1691 @@
         <h2>Personal Projects and Video Games</h2>
     
        <!-- Sección de Proyectos de UI/UX -->
+       <div class="project-category">
+        <h3>QA Projects</h3>
+        
+        <div class="project-item">
+            <div class="project-descriptionqa">
+                <a href="https://drive.google.com/file/d/1DWzfBya7Ye3qxF03vFtN9klGKSqy_HiW/view?usp=sharing">See document</a>
+            <h4>QA - Bank Aplication</h4>
+                <p> This is a QA project for a fictitious mobile banking application where users can: log in, check their bank balance,
+                    transfer money and view transaction history. The objective is to ensure that all of these functionalities work 
+                    correctly.
+                </p>
+                <p> In this project I worked on: <br>
+                    <b>Test plan:</b> Ensure all mobile app key functionalities work as expected. <br>
+                    <b>Test cases:</b> TC001, TC002,TC003,TC004,TC005,TC006 <br>
+                    <b>Requirements</b> Users can log in, check their bank balance, transfer money and view transaction history. 
+                    The objective is to ensure that all of these functionalities work correctly.<br>
+                    <b>Traceability Matrix:</b> Is a tool used to ensure that all specifed requirements are tested throught corresponding test cases.<br>
+                    <b>Regression Test:</b> Verify that the basic functionalities of the mobile banking application continue 
+                    to function correctly after the introduction of new functionalities or corrections.<br>
+                    <b>Compatibility Test: </b> The purpose of the compatibility test is to verify that the mobile banking application works correctly on a 
+                    wide variety of devices and operating systems, including both Android and iOS, in different screen resolutions and versions.<br>
+                    <b>Performance Test: </b> The purpose of this test is to ensure that the mobile banking application can handle a high number of 
+                    simultaneous users, process transactions in a reasonable time, and maintain a good user experience under heavy loads.
+                    <br>
+                    <b>Accessibility Test:</b> The purpose of these tests is to ensure that the mobile banking application is accessible to people 
+                    with disabilities, including 
+                    the use of screen readers, support for keyboard navigation, and appropriate color contrast.<br>
+                </p>
+            
+                <hr style="border: 1px solid #0F3460; margin: 20px 0;">
+                <details>
+                <summary>Test Planning</summary>
+               
+                <p>
+                    <b>Project:</b> Mobile online banking application <br>
+                    <b>Objective:</b> Ensure all mobile app key functionalities work as expected. <br>
+                    <b>Scope:</b> Test functionalities such as : log in, check their bank balance, transfer money and view translation history.
+                    <br>
+                    <b>Resources:</b> 1 QA tester, test environment with 1 Android device with bank account installed, 1 IOS device with bank account installed.<br>
+                    <b>Functionalities that will not be tested:</b> Functionalities related to advanced security (with multifactor authentication)
+                    <br>
+                    <b>Acceptance Criteria:</b> The functionalities must respond within 2 seconds and show accurate information.
+                    <br>
+                    <b>Risks:</b>  Compatibility problems with different devices or versions of mobile operating systems.
+                     <br>
+                    <b>Schedule:</b> Starts on february 1, 2025, en on february 15, 2025. <br>
+                    <b>Milestones:</b><br>
+                    Test Planning (Feb 1 - 3 )<br>
+	                Test case creation (Feb 4 - 7)<br>
+	                Test execution (Feb 7 - 12)<br>
+	                Defect reporting (Feb 13 - 15)<br>
+
+
+                </p>
+
+                <table>
+                    <tr>
+                        <th rowspan="2">February</th>
+                        <th>1 - 3</th>
+                        <th>4 - 7</th>
+                        <th>7 - 12</th>
+                        <th>13 - 15</th>
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                    <tr>
+                        <td>Test Planning</td>
+                        <td class="green"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Test Case Creation</td>
+                        <td></td>
+                        <td class="green"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Test Execution</td>
+                        <td></td>
+                        <td></td>
+                        <td class="green"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Defect Reporting</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="green"></td>
+                    </tr>
+                </table>
+            </details>
+               
+
+            <details>
+                <summary>Test Cases</summary>
+                <p>
+                    <details>
+                        <summary>TC001</summary>
+                        <p>
+                            <b>Test description:</b> Verify that users can successfully log in with <u>VALID</u> credentials.
+                            <br>
+                            <b>Preconditions:</b> The bank app is installed / The user has a valid account.<br>
+                            <b>Test steps:</b> <b>1.</b> Open the bank app  <b>2.</b> Click on the "Login" button  <b>3.</b>Enter a valid username into the “username field”  <b>4.</b>Enter a valid password into the “password  field”  <b>5.</b>Click on the Login button  <br>
+                            <b>Expected result:</b>The user should be redirected to the main user account page, where their current bank balance should appear. <br>
+                            <b>Post conditions:</b> The user should stay logged in.
+                            <br>
+
+
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>TC002</summary>
+                        <p></p>
+                            <b>Test description:</b>Verify that users can’t successfully log in with <u>INVALID</u> credentials. <br>
+                            <b>Preconditions:</b> The banc app is installed /
+                            The user has a valid account.
+                            <br>
+                            <b>Test steps:</b> <b>1.</b> Open the bank app  <b>2.</b> Click on the "Login" button  <b>3.</b>Enter an invalid username into the “username field”  <b>4.</b>Enter an invalid password into the “password  field”  <b>5.</b>Click on the Login button  <br>
+                            <b>Expected result:</b>The user should not be able to access the application. <br>
+                            <b>Post conditions:</b>  An error message should appear on the app indicating a credential issue.
+                            <br>
+
+
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>TC003</summary>
+                        <p></p>
+                            <b>Test description:</b>Verify that users can successfully transfer money. <br>
+                            <b>Preconditions:</b>The user is logged in / The user has enough money in the account. <br>
+                            <b>Test steps:</b> <b>1.</b>Click on the “transfer money” button<b>2.</b>Select the origin account <b>3.</b> Write the destination account <b>4.</b>Enter the amount to be transferred<b>5.</b>Click the button “transfer” <b>6.</b>The system should display a confirmation message with success and update the balance of the account <br>
+                            <b>Expected result:</b> The user should be redirected to the main user account page, where their current bank balance should appear.<br>
+                            <b>Post conditions:</b> The new balance should appear in the balance section and in the transaction history.
+                            <br>
+
+
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>TC004</summary>
+                        <p></p>
+                            <b>Test description:</b>Verify that users can’t transfer money without enough money in the account .
+                            <br>
+                            <b>Preconditions:</b>The user is logged in / The user doesn't have enough money in the account.
+                            <br>
+                            <b>Test steps:</b> <b>1.</b>Click on the “transfer money” button<b>2.</b>Select the origin account <b>3.</b> Write the destination account <b>4.</b>Enter the amount to be transferred<b>5.</b>Click the button “transfer” <b>6.</b>The system should display an error message indicating that the user doesn't have enough money in the account.
+                            <br>
+                            <b>Expected result:</b>The system should display an error message indicating that the user doesn't have enough money in the account and redirected to STEP 4. <br>
+                            
+
+
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>TC005</summary>
+                        <p></p>
+                            <b>Test description:</b>Verify that users can’t transfer money in a <u>INVALID</u> destination account <br>
+                            <b>Preconditions:</b>The user is logged in  <br>
+                            <b>Test steps:</b> <b>1.</b>Click on the “transfer money” button<b>2.</b>Select the origin account <b>3.</b> Write the destination account <b>4.</b>Enter the amount to be transferred<b>5.</b>Click the button “transfer” <b>6.</b>The system should display an error message indicating that the destination account is invalid.<br>
+                            <b>Expected result:</b>The system should display an error message indicating that the destination account is invalid. redirect him to STEP 3. <br>
+                           
+
+
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>TC006</summary>
+                        <p></p>
+                            <b>Test description:</b>Verify that users can check the transaction history <br>
+                            <b>Preconditions:</b> The user is logged in.<br>
+                            <b>Test steps:</b> <b>1.</b>Click on “account” button <b>2.</b>Click on “account balance number” 
+                            <br>
+                            <b>Expected result:</b>The transaction history should appear with all the transactions done in the past.
+                            <br>
+
+                        </p>
+                    </details>
+
+                    
+
+
+                </p>
+
+            </details>
+
+            <details>
+                <summary>Requirements and Traceability matrix</summary>
+                <p>
+                    <b>Requirements</b><br>
+                    Users can log in, check their bank balance, transfer money and 
+                    view transaction history. The objective is to ensure that all of these functionalities work correctly.<br>
+                    <b>Test Scenarios</b><br>
+                    <b>1.</b>Verify Log in<br>
+                    <b>2.</b>Verify transfer money.<br>
+                    <b>3.</b>Verify view transaction history<br>
+                    <b>Traceability Matrix</b><br>
+
+                    <table>
+                        <tr>
+                            <th rowspan="2">Requirement ID</th>
+                            <th>Requirement description</th>
+                            <th>Test case ID</th>
+                            <th>Test case description</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            
+                        </tr>
+                        <tr>
+                            <td>R001</td>
+                            <td >User login with VALID credentials</td>
+                            <td>TC001</td>
+                            <td>Verify User login with VALID credentials</td>
+                            <td class="green">Completed / Passed</td>
+                        </tr>
+                        <tr>
+                            <td>R002</td>
+                            <td>User login with INVALID credentials</td>
+                            <td >TC002</td>
+                            <td>Verify user can’t login with INVALID credentials</td>
+                            <td  class="green">Completed / Passed</td>
+                        </tr>
+                        <tr>
+                            <td>R003</td>
+                            <td>Users can successfully transfer money</td>
+                            <td>TC003</td>
+                            <td > Verify user can successfully transfer money</td>
+                            <td class="yellow"> In Progress</td>
+                        </tr>
+                        <tr>
+                            <td>R004</td>
+                            <td>Users can’t transfer money without enough money in the account </td>
+                            <td>TC004</td>
+                            <td>Verify user can’t transfer money without enough money in the account</td>
+                            <td class="red">Completed / Failed</td>
+                        </tr>
+                        <tr>
+                            <tr>
+                            <td>R005</td>
+                            <td>Users can’t transfer money in a INVALID destination account.</td>
+                            <td>TC005</td>
+                            <td>Verify user can’t transfer money in a INVALID destination account.</td>
+                            <td class="green">Completed / Passed</td>
+                        </tr>
+
+                        </tr>
+                            <td>R006</td>
+                            <td>Users can check the transaction history</td>
+                            <td>TC006</td>
+                            <td>Verify user can check the transaction history</td>
+                            <td class="green">Completed / Passed</td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <b>Results Inform</b><br>
+                        <b><u>Issues Detected</u></b><br>
+                        <b>R004 - TC004</b><br>
+                        <b>Description:</b>Users can’t transfer money without enough money in the account.<br>
+                        <b>Error description:</b>The system doesn't display an error message indicating that the user doesn’t have enough money in the account.<br>
+                        <b>Steps to reproduce:</b><br>
+                        <b>1.</b>Click on the “transfer money” button.
+                        <br>
+                        <b>2.</b>Select the origin account<br>
+                        <b>3.</b>Write the destination account<br>
+                        <b>4.</b>Enter the amount to be transferred<br>
+                        <b>5.</b>Click the button “transfer”<br>
+                        <b>6.</b>See that the system doesn't display an error message indicating that the user doesn’t have enough money in the account.
+                        <br>
+
+                        <b>Expected Result:</b>The system should display an error message indicating that the user doesn't have enough money in the account and redirect him to STEP 4.
+                        <br>
+                        <b>Current Result:</b>The system <u>doesn't display</u> an error message indicating that the user doesn’t have enough money in the account and redirect the user to the main page.
+                        <br>
+                    </p>
+
+
+
+
+                </p>
+
+                
+            </details>
+
+            <details>
+                <summary>Regression Test</summary>
+
+                <p>
+                    <b>Objective:</b>Verify that the basic functionalities of the mobile banking application 
+                    continue to function correctly after the introduction of new functionalities or corrections.<br>
+                    <b>Scope:</b>The functionalities to be tested include login, balance check, transfers and transaction history check.<br>
+                    <b>Criteria for selecting test cases:</b>The selected test cases cover the core functionality of the application, modified 
+                    areas and code interdependencies.<br>
+                    <b>Test cases list:</b>TC001,TC02,TC003,TC004,TC005,TC006<br>
+                    <b>Planning:</b>Regression testing will be performed after each code update, at the end of each sprint, and each time a new release is made.
+                    <br>
+                    <b>Tests Results:</b><br>
+                    - Test cases executed: 5<br>
+                    - Test cases Passed: 4<br>
+                    - Test cases Failed: 1<br>
+                   
+                    <b>Conclusion:</b>Regression testing has generally been successful, but functionality related to money transfers needs to be revised<br>
+
+                </p>
+
+
+            </details>
+
+            <details>
+                <summary>Compatibility Test</summary>
+
+                <p>
+                    <b>Objective: </b>The purpose of the compatibility test is to verify that the mobile 
+                    banking application works correctly on a wide variety of devices and operating systems,
+                    including both Android and iOS, in different screen resolutions and versions.<br>
+
+                    <b>Scope: </b><br>
+
+                        <u>Compatibility test will be performed on:</u><br>
+                        Android devices: Version 10,11,12<br>
+                        iOS devices: Versions 13,14,15<br>
+                        <br>
+                        <u>Screen resolutioins:</u><br>
+                        Small screens: less than 5" <br>
+                        Medium screens: between 5" and 6.5"<br>
+                        Large Screens: over 6.5"<br>
+
+                    <b>Test cases: </b><br>
+
+                    <table>
+                        <tr>
+                            <th rowspan="2"> ID</th>
+                            <th>OS / Version</th>
+                            <th>Resolution</th>
+                            <th>Expected Result</th>
+                            <th>Current Result</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            
+                        </tr>
+                        <tr>
+                            <td>TC001</td>
+                            <td >ANDROID / 11</td>
+                            <td>Small</td>
+                            <td>Login successfully</td>
+                            <td>[complete when the test is done]</td>
+                            <td >Not started</td>
+                        </tr>
+                        <tr>
+                            <td>TC001</td>
+                            <td>ANDROID / 10</td>
+                            <td >Small</td>
+                            <td>Login successfully</td>
+                            <td>[complete when the test is done]</td>
+                            <td >Not started</td>
+                        </tr>
+                        <tr>
+                            <td>TC001</td>
+                            <td>ANDROID / 12</td>
+                            <td>Small</td>
+                            <td>Login successfully</td>
+                            <td>[complete when the test is done]</td>
+                            <td >Not started</td>
+                        </tr>
+                        <tr>
+                            <td>TC001</td>
+                            <td>iOS / 13</td>
+                            <td>Small</td>
+                            <td>Login successfully</td>
+                            <td>[complete when the test is done]</td>
+                            <td >Not started</td>
+                        </tr>
+                        <tr>
+                            <tr>
+                            <td>TC001</td>
+                            <td>iOS / 14</td>
+                            <td>Small</td>
+                            <td>Login successfully</td>
+                            <td>[complete when the test is done]</td>
+                            <td >Not started</td>
+                        </tr>
+
+                        </tr>
+                            <td>TC001</td>
+                            <td>iOS / 15</td>
+                            <td>Small</td>
+                            <td>Login successfully</td>
+                            <td>[complete when the test is done]</td>
+                            <td >Not started</td>
+                        </tr>
+
+                    </tr>
+                    <td><b>...</b></td>
+                    <td><b>...</b></td>
+                    <td><b>...</b></td>
+                    <td><b>...</b></td>
+                    <td><b>...</b></td>
+                    <td ><b>...</b></td>
+                </tr>
+                    </table>
+
+
+
+
+                </p>
+
+            </details>
+
+            <details>
+
+                <p>
+
+                    <summary>Performance test</summary>
+
+                    <b>Objective:</b>The purpose of this test is to ensure that the mobile banking application can handle 
+                    a high number of simultaneous users,
+                     process transactions in a reasonable time, and maintain a good user experience under heavy loads.<br>
+
+                    <u>Performance test types</u><br>
+
+                    <b>Load Testing:</b> Test how the application responds when many users access it simultaneously.
+                    <br>
+                    <b>Stress Testing:</b>Assess how the application behaves when its maximum capacity is exceeded.
+                    <br>
+                    <b>Soak Testing:</b>Testing the system for an extended period to see how it handles a continuous load.
+                    <br>
+                    <b>Response time Testing:</b>Measure the time it takes the application to respond to actions such as logging in or checking balance.<br>
+
+                    <u>Key Metrics</u><br>
+                    <b>Response time:</b>The time it takes the application to respond to different actions (login, balance inquiry, etc.).<br>
+                    <b>Maximum concurrent users:</b>How many users the application can handle before performance degrades.
+                    <br>
+                    <b>Resource usage:</b>Monitor CPU, memory and bandwidth usage.
+                    <br>
+                    <b>Errors under load:</b>Behavior of the application in the face of errors when there is a lot of load.
+                    <br>
+
+                    <table>
+                        <tr>
+                            <th rowspan="2"> ID</th>
+                            <th class = "yellow">Test type</th>
+                            <th class = "yellow">Description</th>
+                            <th class = "yellow">Scenario</th>
+                            <th class = "yellow">Metric</th>
+                            <th class = "yellow">Expected result</th>
+                            <th class = "yellow">Actual result</th>
+                            <th class = "yellow">Scenario</th>
+                        </tr>
+                        <tr>
+                            
+                        </tr>
+                        <tr>
+                            <td>PR001</td>
+                            <td >Load Test</td>
+                            <td>Simulate 500 simultaneous users</td>
+                            <td>Login of 500 users in 5 min</td>
+                            <td>Response time < 2s</td>
+                            <td>[fill]</td>
+                            <td>[fill]</td>
+                            <td>In progress</td>
+
+                        </tr>
+                        <tr>
+                            <td>PR002</td>
+                            <td>Stress Test</td>
+                            <td>Increase users up to 1000</td>
+                            <td>1000 users for 10 min</td>
+                            <td>Minimal errors and stability</td>
+                            <td>[fill]</td>
+                            <td>[fill]</td>
+                            <td>In progress</td>
+                        </tr>
+                        <tr>
+                            <td>PR003</td>
+                            <td>Check balance with low load</td>
+                            <td>10 users querying</td>
+                            <td>Login successfully</td>
+                            <td>Response time < 1s</td>
+                            <td>[fill]</td>
+                            <td>[fill]</td>
+                            <td>In progress</td>
+                        </tr>
+                        <tr>
+                            <td>PR004</td>
+                            <td>Response Time Test</td>
+                            <td>Try the app for 24 hours</td>
+                            <td>200 simultaneous users</td>
+                            <td>Stable response time (<2s)</td>
+                            <td>[fill]</td>
+                            <td>[fill]</td>
+                            <td>In progress</td>
+                        </tr>
+                        
+
+                    
+                    </table>
+
+                </p>
+            
+
+            </details>
+
+            <details>
+
+                <p>
+
+                    <summary>Accessibility test</summary>
+
+                    <b>Objective:</b>The purpose of these tests is to ensure that the mobile banking application is accessible to people with disabilities,
+                     including the use of screen readers, support for keyboard navigation, and appropriate color contrast.<br>
+                    <b>Scope:</b> The aspects to be evaluated include:<br>
+                    Screen readers to navigate the app.<br>
+                    Color contrast for visually impaired users.<br>
+                    Keyboard navigation.<br>
+
+                    <table>
+                        <tr>
+                            <th rowspan="2"> ID</th>
+                            <th class = "yellow">Description</th>
+                            <th class = "yellow">Steps to execute</th>
+                            <th class = "yellow">Expected result</th>
+                            <th class = "yellow">Actual result</th>
+                            <th class = "yellow">State</th>
+                        </tr>
+                        <tr>
+                            
+                        </tr>
+                        <tr>
+                            <td>AC001</td>
+                            <td >Navigation with screen reader</td>
+                            <td>Use a screen reader to navigate the app</td>
+                            <td>All elements must be read correctly by the screen reader</td>
+                            <td>[fill]</td>
+                            <td>In progress</td>
+
+                        </tr>
+                        <tr>
+                            <td>AC002</td>
+                            <td>Adequate color contrast</td>
+                            <td>Review the colors used for texts and buttons</td>
+                            <td>Contrast must meet WCAG standards (4.5:1)</td>
+                            <td>[fill]</td>
+                            <td>In progress</td>
+                        </tr>
+                        <tr>
+                            <td>AC003</td>
+                            <td>Keyboard navigation</td>
+                            <td>Test the application using only the keyboard</td>
+                            <td>All elements must be tab accessible</td>
+                            <td>[fill]</td>
+                            <td>In progress</td>
+                        </tr>
+                        
+                        
+
+                    
+                    </table>
+
+
+
+                </p>
+
+            </details>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="project-item">
+        <div class="project-content">
+           
+            <div class="project-descriptionqa">
+                <h4>QA Automation</h4>
+
+                <details>
+
+                 <summary>Login test</summary>   
+                 <p><b>Scenario:</b>Automate login testing on a web page (www.saucedemo.com).<br><b>Objective:</b>These tests validate the login process of a web page, performing different tests to check for correct and incorrect user credentials. <br>- Selenium,NUnit,C#<br></p>
+
+                    <!-- Primer conjunto de pestañas -->
+                    <div class="tab-container">
+                        <!-- Botones de las pestañas -->
+                            <div class="tab-buttons">
+                                <button class="tab-button active" onclick="openTab(event, 'class-code', this)">Class</button>
+                                <button class="tab-button" onclick="openTab(event, 'executable-code', this)">Executable code</button>
+                            </div>
+
+                        <!-- Contenido de las pestañas -->
+                            <div id="class-code" class="tab-content active">
+                                <pre><code class="language-csharp">
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using OpenQA.Selenium;
+
+namespace LoginAutomation.Classes
+{
+    public class LoginPageClass
+    {
+
+        private IWebDriver driver;
+
+        // Constructor: Inicialitza el driver
+        public LoginPageClass(IWebDriver driver)
+        {
+            this.driver = driver;
+        }
+
+        // Page Elements
+        private IWebElement UsernameField => driver.FindElement(By.Id("user-name"));
+        private IWebElement PasswordField => driver.FindElement(By.Id("password"));
+        private IWebElement LoginButton => driver.FindElement(By.Id("login-button"));
+        private IWebElement ErrorMessage => driver.FindElement(By.ClassName("error-message-container"));
+
+        // Accions de la pàgina de login
+        public void NavigateToLoginPage()
+        {
+            driver.Navigate().GoToUrl("https://www.saucedemo.com/");
+        }
+
+        public void Login(string username, string password)
+        {
+            UsernameField.SendKeys(username);
+            PasswordField.SendKeys(password);
+            LoginButton.Click();
+        }
+
+        public bool IsErrorMessageDisplayed()
+        {
+            return ErrorMessage.Displayed;
+        }
+
+        public string GetErrorMessageText()
+        {
+            return ErrorMessage.Text;
+        }
+
+
+
+    }
+}
+                                    
+                                </code></pre>
+                            </div> 
+
+                            <div id="executable-code" class="tab-content">
+                                <pre><code class="language-csharp">
+using LoginAutomation.Classes;
+using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace LoginAutomation.Tests
+{
+    public class LoginTestClass
+    {
+        IWebDriver driver;
+        LoginPageClass loginPage;
+
+
+        [SetUp]
+        public void Setup()
+        {
+            //Initialize Chrome Brower
+            driver = new ChromeDriver();
+            //Browser full screen
+            driver.Manage().Window.Maximize();
+
+            //Initialize Login Page
+            loginPage = new LoginPageClass(driver);
+            
+            
+        }
+
+        [Test]
+        public void LoginWithValidCredentials_ShouldNavigateToInventoryPage()
+        {
+
+            //1. Navigate to Login Page
+            loginPage.NavigateToLoginPage();
+
+            //2.Login into page
+
+            loginPage.Login("standard_user", "secret_sauce");
+
+            //3. Validate we arribe inventory page
+
+            Assert.IsTrue(driver.Url.Contains("inventory.html"), "Login was not successful");
+
+            
+
+        }
+
+        [Test]
+
+        public void LoginWithInvalidCredentials_ShouldShowErrorMessage()
+        {
+            //1. Navigate to Login Page
+            loginPage.NavigateToLoginPage();
+
+            //2.Login into page
+
+            loginPage.Login("incorrect_user", "wrong_password");
+
+            //3. Validate we arribe inventory page
+
+            Assert.IsTrue(loginPage.IsErrorMessageDisplayed(), "Error Message not displayed");
+            Assert.AreEqual("Epic sadface: Username and password do not match any user in this service", loginPage.GetErrorMessageText());
+
+
+
+        }
+
+        [TearDown]
+        public void CloseTest()
+        {
+            //driver.Quit();
+        }
+
+
+    }
+}
+                                </code></pre>
+                            </div>
+                    </div>
+
+
+                </details>
+
+
+                <details>
+
+                    <summary>Product scrap</summary>   
+                    <p><b>Scenario:</b> These tests access a web page that displays a table of data (a product catalog) and accesses the table and retrieves specific information, such as all product names, all product prices and validate a product price with the name of an specific product. <br><b>Objective:</b>- Use Selenium to access DOM (Document Object Model) elements, read table content, and perform assertions to verify that the data is correct. <br>- Selenium,NUnit,C#<br></p>
+   
+                       <!-- Primer conjunto de pestañas -->
+                       <div class="tab-container">
+                           <!-- Botones de las pestañas -->
+                               <div class="tab-buttons">
+                                   <button class="tab-button active" onclick="openTab(event, 'class-code', this)">Class</button>
+                                   <button class="tab-button" onclick="openTab(event, 'executable-code', this)">Executable code</button>
+                               </div>
+   
+                           <!-- Contenido de las pestañas -->
+                               <div id="class-code" class="tab-content active">
+                                   <pre><code class="language-csharp">
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using OpenQA.Selenium;
+
+namespace LoginAutomation.Classes
+{
+
+    
+
+    public class InventoryPageClass
+    {
+
+            private IWebDriver driver;
+
+        //Constructor
+
+        public InventoryPageClass(IWebDriver driver)
+        {
+            this.driver = driver;
+        }
+
+        //Find web elemetns
+
+        private IReadOnlyCollection<IWebElement> ProductItems
+        {
+
+            get
+            {
+                return driver.FindElements(By.ClassName("inventory_item"));
+            }
+
+        }
+
+        //Method to obtain a list of ProductNames
+
+        public List<String> GetProductNames()
+        {
+            List<string> productNames = new List<string>();
+
+            foreach (var product in ProductItems)
+            {
+
+                var ProductName = product.FindElement(By.ClassName("inventory_item_name")).Text;
+
+                productNames.Add(ProductName);
+
+            }
+
+            return productNames;
+        }
+
+        public List<String> GetProductPrices()
+        {
+            List<string> productPrices = new List<string>();
+
+            foreach (var product in ProductItems)
+            {
+
+                var Productprice = product.FindElement(By.ClassName("inventory_item_price")).Text;
+
+                productPrices.Add(Productprice);
+
+            }
+
+            return productPrices;
+        }
+
+        //Method for obtaining a specific procie of a product
+
+        public String GetProductPriceByName(string ProductName)
+        {
+
+            foreach (var product in ProductItems)
+            {
+
+                var name = product.FindElement(By.ClassName("inventory_item_name")).Text;
+
+                if (name.Equals(ProductName))
+                {
+                    return product.FindElement(By.ClassName("inventory_item_price")).Text;
+                }
+            }
+
+            return null;
+
+        }
+
+
+
+
+    }
+}
+                                    
+                                       
+                                   </code></pre>
+                               </div> 
+   
+                               <div id="executable-code" class="tab-content">
+                                   <pre><code class="language-csharp">
+using LoginAutomation.Classes;
+using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LoginAutomation.Tests
+{
+
+    public class InventoryPageTests
+    {
+        IWebDriver driver;
+        LoginPageClass loginPage;
+        InventoryPageClass inventoryPage;
+
+        [SetUp]
+        public void SetUp()
+        {
+
+            //Initialize web browser
+                driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+
+            //Initilalize LoginPage
+            loginPage = new LoginPageClass(driver);
+
+            //Initialize inventory Page
+            inventoryPage = new InventoryPageClass(driver);
+
+
+
+            loginPage.NavigateToLoginPage();
+            loginPage.Login("standard_user", "secret_sauce");
+
+        }
+
+
+        [Test]
+
+        public void ShouldExtractAllProductNames()
+        {
+
+
+            // Obtain Product Names
+            List<string> productNames = inventoryPage.GetProductNames();
+
+            // Check if theres produrcts in the page
+            Assert.IsTrue(productNames.Count > 0, "Theres no products in the page");
+
+            // Print Product Names in the console
+            foreach (var name in productNames)
+            {
+                TestContext.Out.WriteLine("Product: " + name);
+            }
+
+        }
+
+        [Test]
+
+        public void ShouldExtractAllProductPrices()
+        {
+
+            // Obtain Product prices
+            List<string> productPrices = inventoryPage.GetProductPrices();
+
+            // Check if theres produrcts in the page
+            Assert.IsTrue(productPrices.Count > 0, "Theres no products in the page");
+
+            // Print Product Prices in the console
+            foreach (var price in productPrices)
+            {
+                TestContext.Out.WriteLine("Product Price: " + price);
+            }
+
+        }
+
+        [Test]
+        public void ShouldValidateProductPrice()
+        {
+            // Obtenir el preu d'un producte específic
+            string productName = "Sauce Labs Onesie";
+            string expectedPrice = "$7.99";
+            string actualPrice = inventoryPage.GetProductPriceByName(productName);
+
+            // Validar que el preu del producte és el que s'espera
+            Assert.AreEqual(expectedPrice, actualPrice, $"The price of the product {productName} it's not the expected.");
+
+
+
+        }
+
+
+
+
+        [TearDown]
+
+        public void TearDown()
+        {
+            // Quit Browser
+            //driver.Quit();
+        }
+
+
+
+
+
+
+
+
+    }
+
+}
+                                   </code></pre>
+                               </div>
+                       </div>
+   
+   
+                   </details>
+
+                   <details>
+
+                    <summary>Form Test</summary>   
+                    <p><b>Scenario:</b>Automate interaction with an advanced form that includes text fields, drop-downs, checkboxes, and submit buttons.<br><b>Objective:</b>Automatically complete the form by selecting options and checking boxes. Then, simulate submitting the form and verify that the results are correct. <br>- Selenium,NUnit,C#<br></p>
+
+                       <!-- Primer conjunto de pestañas -->
+                       <div class="tab-container">
+                           <!-- Botones de las pestañas -->
+                               <div class="tab-buttons">
+                                   <button class="tab-button active" onclick="openTab(event, 'class-code', this)">Class</button>
+                                   <button class="tab-button" onclick="openTab(event, 'executable-code', this)">Executable code</button>
+                               </div>
+   
+                           <!-- Contenido de las pestañas -->
+                               <div id="class-code" class="tab-content active">
+                                   <pre><code class="language-csharp">
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
+
+namespace LoginAutomation.Classes
+{
+    internal class FormTestClass
+    {
+
+        private IWebDriver driver;
+
+        //Constructor
+
+        public FormTestClass(IWebDriver driver) {
+
+            this.driver = driver;
+        
+        }
+
+        //Find WebElements
+
+        private IWebElement FirstNameField => driver.FindElement(By.Id("firstName"));
+        private IWebElement LastNameField => driver.FindElement(By.Id("lastName"));
+        private IWebElement EmailField => driver.FindElement(By.Id("userEmail"));
+        private IWebElement GenderRadioButton => driver.FindElement(By.XPath("//label[contains(text(), 'Male')]"));
+                                                                    
+        private IWebElement DateOfBirthDate => driver.FindElement(By.Id("dateOfBirthInput"));
+        private IWebElement MobiledigitsField => driver.FindElement(By.Id("userNumber"));
+
+        private IWebElement SubjectField => driver.FindElement(By.XPath("//*[@id=\"subjectsContainer\"]/div/div[1]"));
+        private IWebElement HobbiesCheckBox => driver.FindElement(By.XPath("//label[contains(text(), 'Sports')]"));
+
+        private IWebElement AddressField => driver.FindElement(By.Id("currentAddress"));
+        private IWebElement SubmitButton => driver.FindElement(By.Id("submit"));
+
+
+
+        private IWebElement ConfirmationMessage => driver.FindElement(By.Id("example-modal-sizes-title-lg"));
+
+
+
+        private IWebElement app => driver.FindElement(By.Id("app"));
+
+        
+
+        // Accions per omplir el formulari
+        public void EnterFirstName(string firstName)
+        {
+            FirstNameField.SendKeys(firstName);
+        }
+
+        public void EnterLastName(string lastName)
+        {
+            LastNameField.SendKeys(lastName);
+        }
+
+        public void EnterEmail(string email)
+        {
+            EmailField.SendKeys(email);
+        }
+
+        public void EnterDateofBirth(string dateofbirth)
+        {
+            DateOfBirthDate.SendKeys(Keys.Backspace);
+            DateOfBirthDate.SendKeys(Keys.Backspace);
+            DateOfBirthDate.SendKeys(Keys.Backspace);
+            DateOfBirthDate.SendKeys(Keys.Backspace);
+            DateOfBirthDate.SendKeys(Keys.Backspace);
+            DateOfBirthDate.SendKeys(Keys.Backspace);
+            DateOfBirthDate.SendKeys(Keys.Backspace);
+            DateOfBirthDate.SendKeys(Keys.Backspace);
+            DateOfBirthDate.SendKeys(Keys.Backspace);
+            DateOfBirthDate.SendKeys(Keys.Backspace);
+            DateOfBirthDate.SendKeys(dateofbirth);
+            app.Click();
+        }
+
+        public void SendSubjects(string subject)
+        {
+            SubjectField.SendKeys(subject);
+        }
+
+        public void SendAdress(string adress)
+        {
+            AddressField.SendKeys(adress);
+        }
+
+        public void SelectGender()
+        {
+            GenderRadioButton.Click();
+
+        }
+
+        public void EnterMobileNumber(string mobileNumber)
+        {
+            MobiledigitsField.SendKeys(mobileNumber);
+        }
+
+        public void SelectHobbyiesCheckBox()
+        {
+            HobbiesCheckBox.Click();
+        }
+
+        public void SendForm()
+        {
+
+            // Use JavaScript to view Submite Button
+            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+            js.ExecuteScript("arguments[0].scrollIntoView(true);", SubmitButton);
+
+            SubmitButton.Click();
+        }
+
+        // Accions de la pàgina de login
+        public void NavigateToFormPage()
+        {
+            driver.Navigate().GoToUrl("https://demoqa.com/automation-practice-form");
+        }
+
+
+        public bool IsConfirmationMessageDisplayed()
+        {
+            return ConfirmationMessage.Displayed;
+        }
+
+
+
+
+
+    }
+}
+                                    
+                                    
+                                       
+                                   </code></pre>
+                               </div> 
+   
+                               <div id="executable-code" class="tab-content">
+                                   <pre><code class="language-csharp">
+
+using LoginAutomation.Classes;
+using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+    namespace LoginAutomation.Tests { 
+
+public class FormTest
+{
+
+    IWebDriver driver;
+    FormTestClass formPage;
+
+    [SetUp]
+
+    public void SetUp() {
+
+        //Initialize Chrome Brower
+        driver = new ChromeDriver();
+        //Browser full screen
+        driver.Manage().Window.Maximize();
+
+        //Go to form URL
+        
+
+        formPage = new FormTestClass(driver);
+        formPage.NavigateToFormPage();
+
+    }	
+
+
+    [Test]
+
+    public void CompleteForm_ShouldSubmitSuccessfully()
+    {
+        //Complete form info
+        formPage.EnterFirstName("Marti");
+        formPage.EnterLastName("Mayolas");
+        formPage.EnterEmail("mmayolas99@gmail.com");
+        formPage.EnterMobileNumber("0622588567");
+        formPage.EnterDateofBirth("9 Sep 1999");
+        formPage.SendAdress("Barcelona, Spain");
+
+        //formPage.SendSubjects("Maths");
+        formPage.SelectGender(); //male
+        formPage.SelectHobbyiesCheckBox(); //Sports
+        
+        formPage.SendForm();
+
+        // 3. Validar que s'ha mostrat el missatge de confirmació
+        Assert.IsTrue(formPage.IsConfirmationMessageDisplayed(), "The confirmation message didn't showed");
+
+
+
+
+
+
+    }
+
+
+
+    [TearDown]
+
+    public void TearDown()
+    {
+        //driver.Quit();
+    }
+
+
+
+
+
+}
+
+}
+                                   </code></pre>
+                               </div>
+                       </div>
+   
+   
+                   </details>
+
+                   <details>
+
+                    <summary>Alerts and pop-ups Test</summary>   
+                    <p><b>Scenario:</b>Automate the management of pop-ups, pop-up windows, or JavaScript alerts that appear on the page.<br><b>Objective:</b>Write a test that interacts with pop-ups, for example, accepting or rejecting alerts, or managing the switching of tabs in the browser. <br>- Selenium,NUnit,C#<br></p>
+
+   
+                       <!-- Primer conjunto de pestañas -->
+                       <div class="tab-container">
+                           
+   
+                           <!-- Contenido de las pestañas -->
+                               <div id="executable-code" class="tab-content active">
+                                   <pre><code class="language-csharp">
+using LoginAutomation.Classes;
+using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using SeleniumExtras.WaitHelpers;
+using OpenQA.Selenium.Support.UI;
+
+namespace LoginAutomation.Tests
+{
+    internal class AlertsTest
+    {
+
+        IWebDriver driver;
+
+
+        [SetUp]
+
+        public void SetUp()
+        {
+
+            driver = new ChromeDriver();
+
+            driver.Manage().Window.Maximize();
+
+            
+
+        }
+
+
+        [Test]
+
+        public void ShouldHandleAlertPopup()
+        {
+            driver.Navigate().GoToUrl("https://demoqa.com/alerts");
+
+
+            //Clicl button that generate Alerts
+
+            IWebElement AlertButton = driver.FindElement(By.Id("alertButton"));
+            AlertButton.Click();
+
+            // Canviar a l'alerta i acceptar-la
+            IAlert alert = driver.SwitchTo().Alert();
+            Assert.AreEqual("You clicked a button", alert.Text);  // Validar el text de l'alerta
+            alert.Accept();  // Acceptar l'alerta
+
+        }
+
+        [Test]
+
+        public void ShouldHandleAlertPopupTimer()
+        {
+            driver.Navigate().GoToUrl("https://demoqa.com/alerts");
+
+
+            //Clicl button that generate Alerts
+
+            IWebElement AlertButton = driver.FindElement(By.Id("timerAlertButton"));
+            AlertButton.Click();
+
+
+            // Esperar fins que l'alerta sigui present
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.AlertIsPresent());
+
+            // Canviar a l'alerta i acceptar-la
+            IAlert alert = driver.SwitchTo().Alert();
+            Assert.AreEqual("This alert appeared after 5 seconds", alert.Text);  // Validar el text de l'alerta
+            alert.Accept();  // Acceptar l'alerta
+
+        }
+
+        [Test]
+
+        public void ShouldHandleAlertPopupComfirmBox()
+        {
+            driver.Navigate().GoToUrl("https://demoqa.com/alerts");
+
+
+            //Clicl button that generate Alerts
+
+            IWebElement AlertButton = driver.FindElement(By.Id("confirmButton"));
+            AlertButton.Click();
+
+
+            // Esperar fins que l'alerta sigui present
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.AlertIsPresent());
+
+            // Canviar a l'alerta i acceptar-la
+            IAlert alert = driver.SwitchTo().Alert();
+            Assert.AreEqual("Do you confirm action?", alert.Text);  // Validar el text de l'alerta
+            alert.Dismiss();  // Dismisses the alert
+
+        }
+
+        [Test]
+
+        public void ShouldHandleAlertPopupPrompBox()
+        {
+            driver.Navigate().GoToUrl("https://demoqa.com/alerts");
+
+
+            //Click button that generate Alerts
+
+            IWebElement AlertButton = driver.FindElement(By.Id("promtButton"));
+            AlertButton.Click();
+
+
+            // Esperar fins que l'alerta sigui present
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            wait.Until(ExpectedConditions.AlertIsPresent());
+
+            // Canviar a l'alerta i acceptar-la
+            IAlert alert = driver.SwitchTo().Alert();
+            Assert.AreEqual("Please enter your name", alert.Text);  // Validar el text de l'alerta
+            alert.SendKeys("Marti Mayolas");
+            alert.Accept();  // Dismisses the alert
+                
+        }
+
+
+
+
+
+
+
+    }
+
+}
+                                    
+                                    
+                                    
+                                       
+                                   </code></pre>
+                               </div>    
+
+                       </div>
+   
+   
+                   </details>
+
+                   <details>
+
+                    <summary>Dynamic Properties Test</summary>   
+                    <p><b>Scenario:</b>Write a test that checks for an element that only appears after an asynchronous action (for example, dynamic content loading or a loading animation).<br><b>Objective:</b>Objective: Use Selenium to ensure that the test correctly waits for elements to appear or disappear. This avoids fast execution issues that cause tests to fail. <br>- Selenium,NUnit,C#<br></p>
+   
+                       <!-- Primer conjunto de pestañas -->
+                       <div class="tab-container">
+                           
+   
+                           <!-- Contenido de las pestañas -->
+                               <div id="executable-code" class="tab-content active">
+                                   <pre><code class="language-csharp">
+
+using LoginAutomation.Classes;
+using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+
+namespace LoginAutomation.Tests
+{
+    internal class DynamicProperties
+    {
+
+        IWebDriver driver;
+
+        [SetUp]
+
+        public void SetUp()
+        {
+
+            driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+
+
+
+        }
+
+
+
+        [Test]
+
+        public void ShouldWaitUntilElementIsVisible()
+        {
+
+            driver.Navigate().GoToUrl("https://demoqa.com/dynamic-properties");
+
+            //Wait till the button is Visible and clickable
+
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            IWebElement visibleButton = wait.Until(ExpectedConditions.ElementIsVisible(By.Id("visibleAfter")));
+
+            Assert.IsTrue(visibleButton.Displayed);
+
+
+
+        }
+
+        [Test]
+
+        public void ShouldWaitUntilElementIsEnabled()
+        {
+
+            driver.Navigate().GoToUrl("https://demoqa.com/dynamic-properties");
+
+            //Wait till the button is Visible and clickable
+
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            IWebElement clickableButton = wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("enableAfter")));
+
+            clickableButton.Click();
+
+            Assert.IsTrue(clickableButton.Enabled);
+
+
+
+        }
+
+        [TearDown]
+
+        public void TearDown()
+        {
+            // Tancar el navegador
+            //driver.Quit();
+        }
+
+
+
+    }
+}
+                                    
+                                    
+                                    
+                                    
+                                       
+                                   </code></pre>
+                               </div>    
+
+                       </div>
+   
+   
+                   </details>
+
+                   <details>
+
+                    <summary>New windows and tabs Test</summary>   
+                    <p><b>Scenario:</b>Automate the management of pop-ups, pop-up windows, or JavaScript alerts that appear on the page.<br><b>Objective:</b>Write a test that interacts with pop-ups, for example, accepting or rejecting alerts, or managing the switching of tabs in the browser. <br>- Selenium,NUnit,C#<br></p>
+   
+                       <!-- Primer conjunto de pestañas -->
+                       <div class="tab-container">
+                           
+   
+                           <!-- Contenido de las pestañas -->
+                               <div id="executable-code" class="tab-content active">
+                                   <pre><code class="language-csharp">
+
+using LoginAutomation.Classes;
+using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+
+namespace LoginAutomation.Tests
+{
+    internal class WindowSwitchTest
+    {
+
+        IWebDriver driver;
+
+        [SetUp]
+
+        public void Setup()
+        {
+
+            driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+
+
+
+
+        }
+
+
+        [Test]
+
+        public void ShouldOpenAnewTab_andSwitch()
+        {
+
+            driver.Navigate().GoToUrl("https://demoqa.com/browser-windows");
+
+            //Find elementButton element
+
+            IWebElement newTabButton = driver.FindElement(By.Id("tabButton"));
+            newTabButton.Click();
+
+            //Obtain all opened windows
+            string originalWindow = driver.CurrentWindowHandle;
+            IList<string> windowHandles = driver.WindowHandles;
+
+            // Move to the new tab
+            foreach (string window in windowHandles)
+            {
+                if (window != originalWindow)
+                {
+                    driver.SwitchTo().Window(window);
+                    break;
+                }
+            }
+
+            // Assert that we are in the new tab
+            IWebElement heading = driver.FindElement(By.Id("sampleHeading"));
+            Assert.AreEqual("This is a sample page", heading.Text);
+
+            // Return to the original tab
+            //driver.SwitchTo().Window(originalWindow);
+
+
+
+
+
+        }
+
+
+        [Test]
+
+        public void ShouldOpenAnewWindows_Switch_and_Maximize()
+        {
+
+            driver.Navigate().GoToUrl("https://demoqa.com/browser-windows");
+
+            //Find elementButton element
+
+            IWebElement newWindowButton = driver.FindElement(By.Id("windowButton"));
+            newWindowButton.Click();
+
+            //Obtain all opened windows
+            string originalWindow = driver.CurrentWindowHandle;
+            IList<string> windowHandles = driver.WindowHandles;
+
+            // Move to the new tab
+            foreach (string window in windowHandles)
+            {
+                if (window != originalWindow)
+                {
+                    //driver.SwitchTo().Window(window);
+                    driver.SwitchTo().Window(window).Manage().Window.Maximize();
+                    break;
+                }
+            }
+
+            // Assert that we are in the new tab
+            IWebElement heading = driver.FindElement(By.Id("sampleHeading"));
+            Assert.AreEqual("This is a sample page", heading.Text);
+
+            // Return to the original tab
+            //driver.SwitchTo().Window(originalWindow);
+
+
+
+
+
+        }
+
+
+        [TearDown]
+        public void TearDown()
+        {
+            // Tancar el navegador
+            // driver.Quit();
+        }
+
+
+
+
+
+
+
+
+    }
+}
+                                    
+                                    
+                                    
+                                    
+                                    
+                                       
+                                   </code></pre>
+                               </div>    
+
+                       </div>
+   
+   
+                   </details>
+
+
+
+
+
+
+                
+            </div>
+        </div>
+ </div>
+
+            
+        <!-- Añade más proyectos aquí -->
+
+ 
+    </div>
+
+
     <div class="project-category">
         <h3>UI/UX Projects</h3>
         <div class="project-grid">

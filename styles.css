@@ -164,6 +164,15 @@ header nav ul li a {
     
 }
 
+
+.project-descriptionqa {
+    width: 100%; /* Asegura que el contenido ocupe todo el ancho del contenedor */
+    color: #333; /* Color de texto oscuro para contraste */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+
+
 #video-section {
     display: flex;
     flex-direction: column; /* Asegura que los videos se apilen uno debajo del otro */
@@ -405,6 +414,120 @@ th {
 .game-text {
     color: #EDEDED;
 }
+
+
+
+
+table {
+    width: 25%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #fce5b1;
+    font-weight: bold;
+}
+
+td.green {
+    background-color: #b6d7a8;
+}
+td.yellow {
+    background-color: #dde759;
+}
+td.red {
+    background-color: #ea5858;
+}
+
+td:first-child, th:first-child {
+    background-color: #fce5b1;
+    text-align: left;
+    font-weight: bold;
+}
+
+details {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details[open] summary {
+    color: #f36; /* Cambia el color cuando está abierto */
+}
+
+details p {
+    margin-top: 10px;
+}
+
+details details {
+    margin-top: 10px;
+    margin-left: 20px; /* Desplaza el contenido anidado para que sea visible que está dentro */
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+}
+
+details details summary {
+    color: #555; /* Cambia el color del texto para los desplegables anidados */
+}
+
+
+/* Estilos para las pestañas y el código */
+.tab-container {
+    margin-bottom: 40px; /* Espacio entre conjuntos de pestañas */
+}
+.tab-buttons {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.tab-buttons button {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.tab-buttons button.active {
+    background-color: #555;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+pre {
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+code {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #f8f8f2;
+}
+
+
 
 /* Para pantallas pequeñas, de 768px o menos */
 @media screen and (max-width: 768px) {

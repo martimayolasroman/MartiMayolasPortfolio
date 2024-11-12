@@ -33,3 +33,40 @@ document.getElementById('contact-form').addEventListener('submit', function(even
      document.body.scrollTop = 0; // Para Safari
      document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
  }
+
+   // Selecciona solo los desplegables principales (los que no están dentro de otros `details`)
+   document.querySelectorAll("details").forEach((details) => {
+    // Escucha el evento `toggle` solo para los detalles principales
+    details.addEventListener("toggle", function () {
+        // Solo actúa si el desplegable es un hijo directo de `body` (evita anidados)
+        if (details.parentNode.tagName !== "DETAILS" && details.open) {
+            document.querySelectorAll("details").forEach((el) => {
+                // Cierra los otros detalles principales
+                if (el !== details && el.parentNode.tagName !== "DETAILS") {
+                    el.open = false;
+                }
+            });
+        }
+    });
+});
+
+function openTab(event, tabId, element) {
+    // Encuentra el contenedor padre más cercano con la clase 'tab-container'
+    var tabContainer = element.closest('.tab-container');
+
+    // Oculta todos los contenidos de pestañas dentro de este contenedor
+    var tabContents = tabContainer.querySelectorAll('.tab-content');
+    tabContents.forEach(function(content) {
+        content.classList.remove('active');
+    });
+
+    // Quita la clase 'active' de todos los botones dentro de este contenedor
+    var tabButtons = tabContainer.querySelectorAll('.tab-button');
+    tabButtons.forEach(function(button) {
+        button.classList.remove('active');
+    });
+
+    // Muestra la pestaña seleccionada y marca el botón como activo
+    tabContainer.querySelector('#' + tabId).classList.add('active');
+    element.classList.add('active');
+}
